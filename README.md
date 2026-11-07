@@ -5,7 +5,7 @@ A potentiometer on the **transmitter node** simulates a vehicle speed / throttle
 as a CAN frame every 500 ms and shown on a **128×64 SSD1306 OLED** on the **receiver node**, which also answers with
 an **ACK frame**. If the ACK is missing, the transmitter retries up to 3 times.
 
-![Project photo](images/setup.jpg)
+![Project photo](ESP32-CAN-Bus-Speed-Simulator.jpg)
 
 > Add your breadboard photo as `images/setup.jpg`.
 
@@ -111,7 +111,7 @@ int speedKmh = (percentage * MAX_SPEED_KMH) / 100;
    - `Adafruit GFX Library` (Library Manager)
    - `Adafruit SSD1306` (Library Manager)
 3. Select board **ESP32 Dev Module**.
-4. Flash [`can_transmitter.ino`](can_transmitter.ino) to ESP32 #1 and [`can_receiver.ino`](can_receiver.ino) to ESP32 #2 (each in its own sketch folder).
+4. Flash [`can_transmitter.ino`](TransmitterMCP.ino) to ESP32 #1 and [`can_receiver.ino`](ReceiverMCP.ino) to ESP32 #2 (each in its own sketch folder).
 5. Open the Serial Monitor at **115200 baud** on each board.
 
 ### Installing the MCP2515 library (autowp)
