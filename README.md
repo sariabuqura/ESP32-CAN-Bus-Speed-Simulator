@@ -167,16 +167,7 @@ The OLED shows `CAN POTENTIOMETER`, the percentage in large digits and a level b
 - Use CAN acceptance filters/masks on the receiver
 - Log frames with a CAN analyzer
 
-## Repository structure
 
-```
-.
-├── README.md
-├── can_transmitter.ino
-├── can_receiver.ino
-└── images/
-    └── setup.jpg
-```
 
 ## License
 
