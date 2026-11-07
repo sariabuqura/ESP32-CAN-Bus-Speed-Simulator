@@ -159,15 +159,6 @@ The OLED shows `CAN POTENTIOMETER`, the percentage in large digits and a level b
 | Wrong readings on GPIO 4 | GPIO 4 is ADC2; it cannot be used while Wi-Fi is on (fine here, Wi-Fi is unused) |
 | MCP2515 init fails | Check 5 V supply and the CS pin (GPIO 5) |
 
-## Ideas for improvement
-
-- Add `INT`-pin interrupts instead of polling
-- Send speed as 0–255 in a single byte and add a rolling counter
-- Add a third node (e.g. a dashboard or motor driver using PWM)
-- Use CAN acceptance filters/masks on the receiver
-- Log frames with a CAN analyzer
-
-
 
 ## License
 
